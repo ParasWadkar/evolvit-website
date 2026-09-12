@@ -252,11 +252,12 @@
   padding: clamp(20px, 2.2vw, 26px);
 }
 .side-card h3 { font-size: 17px; margin-bottom: 16px; }
-.side-card ol { display: grid; gap: 14px; counter-reset: s; }
+.side-card ol { display: grid; gap: 16px; counter-reset: s; }
 .side-card ol li {
   display: grid;
-  grid-template-columns: 24px 1fr;
-  gap: 12px;
+  grid-template-columns: 26px minmax(0, 1fr);
+  column-gap: 12px;
+  align-items: start;
   font-size: 13.6px;
   color: var(--muted);
   line-height: 1.55;
@@ -267,9 +268,17 @@
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--brand);
-  padding-top: 2px;
+  line-height: 1.7;
 }
-.side-card ol li strong { color: var(--text); display: block; font-weight: 600; }
+.side-card ol li strong {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14.2px;
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+.side-card ol li span { display: block; }
 .side-card ul { display: grid; gap: 11px; }
 .side-card ul li {
   display: flex;
