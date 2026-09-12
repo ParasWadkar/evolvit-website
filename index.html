@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EvolVIT — Beyond Classrooms, Into Industry | VIT Bhopal University</title>
+<meta name="description" content="EvolVIT is the 100th official club of VIT Bhopal University — a student-led technology community running hackathons, ideathons, workshops, industrial visits and a real industry internship program. Evolve. Experience. Excel." />
+<meta name="theme-color" content="#05070c" />
+<meta name="color-scheme" content="dark" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EvolVIT — Beyond Classrooms, Into Industry" />
+<meta property="og:description" content="The 100th official club of VIT Bhopal University. Hackathons, ideathons, workshops, industrial visits, and internships on live industry projects." />
+<meta property="og:site_name" content="EvolVIT" />
+<meta property="og:image" content="assets/img/og-cover.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="assets/img/og-cover.jpg" />
+
+<link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" />
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="wrap header__inner">
+    <a class="logo" href="#top" aria-label="EvolVIT home">
+      <span class="logo__mark logo__mark--img" aria-hidden="true">
+        <img src="assets/img/evolvit-logo.png" alt="" width="34" height="34" />
+      </span>
+      <span class="logo__text">Evol<span>VIT</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#internship">Internships</a>
+      <a href="#process">Selection</a>
+      <a href="#teams">Teams</a>
+      <a href="#events">Events</a>
+    </nav>
+
+    <div class="header__cta">
+      <a class="btn btn--primary btn--sm" href="#join">Join the club <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#internship">Internships</a>
+  <a href="#process">Selection Process</a>
+  <a href="#teams">Our Teams</a>
+  <a href="#events">Events</a>
+  <a class="btn btn--primary" href="#join">Join the club</a>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <canvas id="net" aria-hidden="true"></canvas>
+
+    <div class="wrap hero__inner">
+      <div>
+        <span class="badge"><span class="dot" aria-hidden="true"></span> 100th Official Club of VIT Bhopal University</span>
+
+        <h1>Beyond Classrooms,<br /><span class="grad-text">Into Industry.</span></h1>
+
+        <p class="hero__sub">
+          EvolVIT is a student-led technology community built to close the gap between what gets
+          taught in a classroom and what actually gets expected on a job floor — through hackathons,
+          workshops, industrial visits, and internships on live products with real deadlines.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#join">Become a member <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--ghost" href="#internship">Explore the internship program</a>
+        </div>
+
+        <div class="hero__meta">
+          <span>Evolve</span><span>Experience</span><span>Excel</span>
+        </div>
+      </div>
+
+      <!-- Terminal card -->
+      <div class="term reveal" aria-hidden="true">
+        <div class="term__bar">
+          <i></i><i></i><i></i>
+          <em>~/evolvit — zsh</em>
+        </div>
+        <div class="term__body">
+          <p class="term__line"><span class="p">student@vitbhopal</span>:<span class="k">~</span>$ evolvit join --track tech</p>
+          <p class="term__line term__out">Resolving opportunities<span class="c">...</span> ok</p>
+          <p class="term__line"><span class="c">&gt;</span> hackathons &amp; ideathons <span class="k">enabled</span></p>
+          <p class="term__line"><span class="c">&gt;</span> industry visits <span class="k">enabled</span></p>
+          <p class="term__line"><span class="c">&gt;</span> live internships <span class="k">enabled</span></p>
+          <p class="term__line term__out">Placed on: <span class="s">4 live projects</span>, <span class="s">2 partner companies</span></p>
+          <p class="term__line"><span class="p">student@vitbhopal</span>:<span class="k">~</span>$ <span class="caret"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marquee">
+      <b>Hackathons</b><b>Ideathons</b><b>Workshops</b><b>Industrial Visits</b><b>Seminars</b>
+      <b>Interview Prep</b><b>Live Projects</b><b>Internships</b><b>Placement Readiness</b><b>Open Source</b>
+    </div>
+  </div>
+
+  <!-- ============ STATS ============ -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__num" data-count="100" data-suffix="th">0</div>
+          <div class="stat__label">Official club,<br />VIT Bhopal</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="6" data-pad="2">0</div>
+          <div class="stat__label">Core teams running<br />every event</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="2" data-pad="2">0</div>
+          <div class="stat__label">Industry partners<br />onboarded</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-count="4" data-pad="2">0</div>
+          <div class="stat__label">Flagship events,<br />this tenure</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about__top">
+        <div class="reveal">
+          <span class="eyebrow">Who we are</span>
+          <h2 style="font-size: clamp(30px, 4.4vw, 52px);">A community that ships,<br />not just studies.</h2>
+          <div class="quote">
+            <p>&ldquo;Evolving students into real-world innovators.&rdquo;</p>
+            <cite>EvolVIT &mdash; Club Mission</cite>
+          </div>
+        </div>
+
+        <div class="reveal" style="--d: 120ms; padding-top: 6px;">
+          <p class="lead">
+            EvolVIT exists for one reason: the distance between a syllabus and a sprint board is
+            bigger than most students realise. We close it with industrial visits, hackathons,
+            seminars, and structured interview and placement prep — giving VIT Bhopal students a
+            direct line to real industry problems, and the credibility to solve them.
+          </p>
+          <p class="lead">
+            We don't stop at exposure. EvolVIT partners directly with companies to place selected
+            members into real internships — not simulated case studies, but live products with real
+            deadlines and real users. Bridging classrooms to corporate, building futures, together.
+          </p>
+          <div class="chips" style="margin-top: 26px;">
+            <span class="chip chip--accent">Student-led</span>
+            <span class="chip">Open to all branches</span>
+            <span class="chip">6 core teams</span>
+            <span class="chip">Industry-backed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- What you get -->
+      <div class="grid g-3" style="margin-top: clamp(44px, 5vw, 76px);">
+        <article class="card offer reveal">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 16-4-4 4-4"/><path d="m16 8 4 4-4 4"/><path d="m13 4-2 16"/></svg>
+          </div>
+          <h3><span class="offer__no">01</span> Hackathons &amp; Ideathons</h3>
+          <p>Multi-stage builds and pitch rounds on real problem statements — judged on innovation, feasibility, technical viability and scalability, not just slides.</p>
+        </article>
+
+        <article class="card offer reveal" style="--d: 80ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h20v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 12v3"/></svg>
+          </div>
+          <h3><span class="offer__no">02</span> Workshops &amp; Seminars</h3>
+          <p>Hands-on sessions with industry professionals and guest speakers — on tooling, modern frameworks, automation, and how engineering teams actually work.</p>
+        </article>
+
+        <article class="card offer reveal" style="--d: 160ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <h3><span class="offer__no">03</span> Industrial Visits</h3>
+          <p>On-site days inside real technology companies — product lifecycle, QA, AI-driven workflows, and startup-style teams, seen from the inside.</p>
+        </article>
+
+        <article class="card offer reveal" style="--d: 40ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+          </div>
+          <h3><span class="offer__no">04</span> Interview &amp; Placement Prep</h3>
+          <p>Structured preparation — technical rounds, mini-project assessments, and company-run tests that mirror the real hiring funnel.</p>
+        </article>
+
+        <article class="card offer reveal" style="--d: 120ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18 22 12 16 6"/><path d="M8 6 2 12l6 6"/></svg>
+          </div>
+          <h3><span class="offer__no">05</span> Live Projects</h3>
+          <p>Ship production software with real users — full-stack builds, workflow automation, 3D web, and internal tools used by the club itself.</p>
+        </article>
+
+        <article class="card offer reveal" style="--d: 200ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+          </div>
+          <h3><span class="offer__no">06</span> Real Internships</h3>
+          <p>Top performers are placed with partner companies on domain-specific internships — one of them credited as a valid internship for 4 college credits.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERNSHIP PROGRAM ============ -->
+  <section class="section" id="internship" style="background: var(--bg-soft); border-block: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Learn &middot; Apply &middot; Impact</span>
+        <h2>The EvolVIT <span class="grad-text">Internship Program.</span></h2>
+        <p>
+          Our flagship initiative, and our commitment to turning potential into performance. We
+          collaborate with real industries and startups so selected members work on meaningful, live
+          projects — learning from experts and building career-defining experience.
+        </p>
+      </div>
+
+      <div class="grid g-3">
+        <article class="card reveal">
+          <h3>Industry Collaborations</h3>
+          <p>We partner with leading companies and startups to bring opportunities that actually matter.</p>
+        </article>
+        <article class="card reveal" style="--d: 70ms;">
+          <h3>Real-World Projects</h3>
+          <p>Work on live problems and create real impact, under expert guidance from day one.</p>
+        </article>
+        <article class="card reveal" style="--d: 140ms;">
+          <h3>Mentorship &amp; Guidance</h3>
+          <p>Learn from experienced professionals, get honest feedback, and grow continuously.</p>
+        </article>
+        <article class="card reveal" style="--d: 40ms;">
+          <h3>Skill Building &amp; Growth</h3>
+          <p>Sharpen technical and professional skill in a practical, fast-moving environment.</p>
+        </article>
+        <article class="card reveal" style="--d: 110ms;">
+          <h3>Career Advantage</h3>
+          <p>Strengthen your resume with work you can defend in an interview — a genuine head start.</p>
+        </article>
+        <article class="card reveal" style="--d: 180ms; display: grid; place-content: center; background: var(--grad-soft); border-color: rgba(108,123,255,.34);">
+          <p style="font-family: var(--font-display); font-size: clamp(19px, 2vw, 24px); line-height: 1.3; letter-spacing: -0.03em; color: var(--text);">
+            &ldquo;Opportunities don't happen. You create them.&rdquo;
+          </p>
+          <p style="font-family: var(--font-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); margin-top: 16px;">
+            Selected today &middot; Empowered tomorrow
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS ============ -->
+  <section class="section" id="partners">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it runs</span>
+        <h2>Industry partners &amp; the internship pipeline.</h2>
+        <p>
+          The Research Team builds partnerships with industry organisations to open up
+          domain-specific internships for club members. To date, two collaborations have been closed
+          — and both shipped real software.
+        </p>
+      </div>
+
+      <div class="grid g-2">
+        <!-- Datatrack -->
+        <article class="panel reveal">
+          <div class="panel__head">
+            <h3>Datatrack, Bhopal</h3>
+            <span class="chip chip--accent">3-month internship</span>
+          </div>
+          <p style="color: var(--muted); font-size: 15px;">
+            Members got hands-on exposure to workflow automation (n8n), 3D web development, and
+            modern build frameworks like Speckit — then applied it directly across four live projects.
+          </p>
+          <div class="chips" style="margin-top: 20px;">
+            <span class="chip">n8n</span><span class="chip">Workflow Automation</span>
+            <span class="chip">3D Web</span><span class="chip">Speckit</span>
+          </div>
+          <div class="proj-list" style="margin-top: 24px;">
+            <div class="proj"><span class="proj__no">01</span><span class="proj__name">Uprole</span><a class="proj__tag" href="https://uprole.me" target="_blank" rel="noopener noreferrer">uprole.me &#8599;</a></div>
+            <div class="proj"><span class="proj__no">02</span><span class="proj__name">AI Worksheet Analyzer</span><a class="proj__tag" href="https://pracup.co.in" target="_blank" rel="noopener noreferrer">pracup.co.in &#8599;</a></div>
+            <div class="proj"><span class="proj__no">03</span><span class="proj__name">Atithi &mdash; Visitor Management System</span><span class="proj__tag">internal build</span></div>
+            <div class="proj"><span class="proj__no">04</span><span class="proj__name">Centralized EV Discovery Platform</span><span class="proj__tag">internal build</span></div>
+          </div>
+          <div class="note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6L12 16.9 6.6 19.6l1.2-6L3.3 9.4l6.1-.8z"/></svg>
+            <span>Counted as a valid internship for <strong>4 college credits</strong> by the respective authority.</span>
+          </div>
+        </article>
+
+        <!-- Quantumard -->
+        <article class="panel panel--aqua reveal" style="--d: 120ms;">
+          <div class="panel__head">
+            <h3>Quantumard Software Development</h3>
+            <span class="chip chip--accent">1-month sprint</span>
+          </div>
+          <p style="color: var(--muted); font-size: 15px;">
+            A focused build sprint: a full-stack Project Management System for EvolVIT's own exhibit
+            workflows — role-based access for admins, managers, and members.
+          </p>
+          <div class="chips" style="margin-top: 20px;">
+            <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span>
+            <span class="chip">Node / Express</span><span class="chip">MongoDB</span><span class="chip">JWT</span>
+          </div>
+          <div class="proj-list" style="margin-top: 24px;">
+            <div class="proj"><span class="proj__no">01</span><span class="proj__name">Project &amp; Task Tracking</span><span class="proj__tag">exhibit workflows</span></div>
+            <div class="proj"><span class="proj__no">02</span><span class="proj__name">Profile Management</span><span class="proj__tag">admin &amp; student</span></div>
+            <div class="proj"><span class="proj__no">03</span><span class="proj__name">Department Controls</span><span class="proj__tag">admin panel</span></div>
+            <div class="proj"><span class="proj__no">04</span><span class="proj__name">JWT-Based Secure Auth</span><span class="proj__tag">role-based</span></div>
+          </div>
+          <div class="note" style="background: rgba(46,230,197,.07); border-color: rgba(46,230,197,.26); color: #b6f3e7;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color: var(--aqua);"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Across both internships, members walked away with sharper technical instincts and real problem-solving muscle.</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTION PROCESS ============ -->
+  <section class="section" id="process" style="background: var(--bg-soft); border-block: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Getting in</span>
+        <h2>How the Research Team gets built.</h2>
+        <p>
+          Top-performing club members earn a shot at the Research Team through a structured,
+          five-stage evaluation — built to keep the credibility of our industry partnerships high.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__dot">01</div>
+          <div>
+            <h3>Initial Screening</h3>
+            <p>Interested participants submit applications, reviewed by the team to shortlist suitable candidates.</p>
+          </div>
+        </div>
+        <div class="step reveal" style="--d: 70ms;">
+          <div class="step__dot">02</div>
+          <div>
+            <h3>Skill Assessment</h3>
+            <p>Shortlisted candidates get individual mini-projects on a defined timeline, testing real technical competence.</p>
+          </div>
+        </div>
+        <div class="step reveal" style="--d: 140ms;">
+          <div class="step__dot">03</div>
+          <div>
+            <h3>Performance Evaluation</h3>
+            <p>Candidates are evaluated on how they actually performed in their assigned mini-projects.</p>
+          </div>
+        </div>
+        <div class="step reveal" style="--d: 210ms;">
+          <div class="step__dot">04</div>
+          <div>
+            <h3>Company Assessment</h3>
+            <p>Evaluated candidates sit an additional assessment or test conducted directly by the hiring company.</p>
+          </div>
+        </div>
+        <div class="step reveal" style="--d: 280ms;">
+          <div class="step__dot">05</div>
+          <div>
+            <h3>Internship Placement</h3>
+            <p>Candidates who clear the company's assessment move straight into the internship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAMS ============ -->
+  <section class="section" id="teams">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Behind the scenes</span>
+        <h2>The six teams behind every EvolVIT event.</h2>
+        <p>From first concept to final wrap-up, every event runs on six core teams working in sync. Here's what each one owns — and where you'd fit in.</p>
+      </div>
+
+      <div class="grid g-3">
+        <article class="card team-card reveal">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-12"/><path d="m5 8-3 4 3 4"/><path d="m19 8 3 4-3 4"/></svg>
+          </div>
+          <h3>Tech Team</h3>
+          <p>The technical backbone of every event — submission portals, judging platforms, on-ground tech support — and the team that drives hackathon and challenge design.</p>
+        </article>
+
+        <article class="card team-card reveal" style="--d: 70ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11a0 0 0 0 1 0 0H4z"/><path d="M8 13h8M8 17h5"/></svg>
+          </div>
+          <h3>Content Team</h3>
+          <p>Writes the words behind every event — problem statements, scripts, certificates, reports — keeping the club's message clear and consistent.</p>
+        </article>
+
+        <article class="card team-card reveal" style="--d: 140ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+          </div>
+          <h3>Event Management</h3>
+          <p>Runs the logistics — venue booking, scheduling, on-day coordination, volunteers — keeping every event on track from registration to close.</p>
+        </article>
+
+        <article class="card team-card reveal" style="--d: 40ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="12" r="2.5"/><circle cx="17" cy="15" r="2.5"/><path d="M12 21a9 9 0 1 1 9-9"/></svg>
+          </div>
+          <h3>Design Team</h3>
+          <p>Builds the visual identity for every event — posters, banners, certificates, decks, digital creatives — turning concepts into visuals that catch attention first.</p>
+        </article>
+
+        <article class="card team-card reveal" style="--d: 110ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="12.5" r="3.2"/></svg>
+          </div>
+          <h3>Social Media &amp; Photography</h3>
+          <p>Manages EvolVIT's online presence and documents every event live — photos, reels, recaps — building the club's public story.</p>
+        </article>
+
+        <article class="card team-card reveal" style="--d: 180ms;">
+          <div class="icon-tile" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15 9a4 4 0 0 1 0 6"/><path d="M18 6a8 8 0 0 1 0 12"/></svg>
+          </div>
+          <h3>PR &amp; Outreach</h3>
+          <p>Builds relationships with companies, guest speakers, and partner clubs — securing collaborations and handling internal and external communication.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="section" id="events" style="background: var(--bg-soft); border-block: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Event record &middot; 2025&ndash;26</span>
+        <h2>What we've run so far.</h2>
+        <p>Four flagship events in our first tenure as the 100th club of VIT Bhopal University — from a launch exhibition to an industrial visit that members earned by competing for it.</p>
+      </div>
+
+      <div class="grid" style="gap: clamp(20px, 2.6vw, 32px);">
+
+        <!-- EvolART -->
+        <article class="event reveal">
+          <div>
+            <span class="event__tag">Event 01 &middot; Inaugural Event &middot; Poster Exhibition</span>
+            <h3>EvolART</h3>
+            <p class="event__body">
+              EvolVIT's very first event — a poster exhibition and competition marking our launch as
+              the 100th club of VIT Bhopal University. A multi-stage contest, it pushed students to
+              explore the shift from human to artificial intelligence, digital detox, and student
+              mental stress through creative visual storytelling.
+            </p>
+            <p class="event__body">
+              Round 1 (online submission) drew <strong style="color: var(--text);">81 solo, duo and trio teams</strong>,
+              judged by a five-member EvolVIT panel on relevance, creativity, detailing and visual
+              impact. The top 15 teams advanced to a live poster exhibition at the Mini Auditorium —
+              judged in the presence of Vice Chancellor Dr. T. B. Shridharan, the DSW, and the
+              Assistant DSW.
+            </p>
+            <div class="chips" style="margin-top: 22px;">
+              <span class="chip chip--accent">81 teams, Round 1</span>
+              <span class="chip">Top 15 to live exhibition</span>
+              <span class="chip">Mini Auditorium</span>
+            </div>
+
+            <div class="shots">
+              <button class="shot" type="button" data-lightbox data-caption="EvolART — live poster exhibition, Mini Auditorium">
+                <img src="assets/img/evolart-exhibition.jpg" alt="Students and faculty viewing posters at the EvolART exhibition" loading="lazy" />
+                <figcaption>Poster exhibition</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="100th club felicitation at the EvolART launch">
+                <img src="assets/img/evolart-felicitation.jpg" alt="EvolVIT team being felicitated as the 100th club of VIT Bhopal University" loading="lazy" />
+                <figcaption>100th club felicitation</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="Full house at the EvolART exhibition">
+                <img src="assets/img/evolart-audience.jpg" alt="Students gathered at the EvolART poster exhibition" loading="lazy" />
+                <figcaption>Full house</figcaption>
+              </button>
+            </div>
+          </div>
+
+          <aside class="event__aside">
+            <h4>Winners</h4>
+            <div class="winners">
+              <div class="winner"><span class="winner__pos">1</span><span><span class="winner__name">Bhawesh Kumar Gautam</span><span class="winner__meta">First position</span></span></div>
+              <div class="winner"><span class="winner__pos">2</span><span><span class="winner__name">Tushar Kumar Gupta &amp; Palak Choithani</span><span class="winner__meta">Second position</span></span></div>
+              <div class="winner"><span class="winner__pos">3</span><span><span class="winner__name">Mansaa Kohli &amp; Aastha Adhikari</span><span class="winner__meta">Third position</span></span></div>
+              <div class="winner"><span class="winner__pos">4</span><span><span class="winner__name">Roopsha Ghosh &amp; Shivendra Pandey</span><span class="winner__meta">Fourth position</span></span></div>
+              <div class="winner"><span class="winner__pos">5</span><span><span class="winner__name">Raunit Kumar &amp; Diya Tanwani</span><span class="winner__meta">Fifth position</span></span></div>
+            </div>
+          </aside>
+        </article>
+
+        <!-- Idea2Industry -->
+        <article class="event reveal">
+          <div>
+            <span class="event__tag">Event 02 &middot; Ideathon &middot; Fully Online</span>
+            <h3>Idea2Industry</h3>
+            <p class="event__body">
+              Idea2Industry challenged students to build technically feasible solutions to real-world
+              problem statements — sharpening analytical thinking and pushing participants to design
+              industry-relevant answers that actually bridge theory and implementation, while building
+              teamwork, creativity, and an entrepreneurial mindset.
+            </p>
+            <p class="event__body">
+              Run entirely online across multiple stages, participants presented their problem
+              analysis, proposed solution, feasibility and industry impact before a panel of judges.
+              Entries were scored on innovation, originality, practicality, technical viability,
+              scalability and clarity of presentation.
+            </p>
+
+            <div class="mini-steps" style="margin-top: 26px;">
+              <div class="mini-step"><b>01</b><span><strong>Idea Submission</strong>Teams submitted their problem statement and proposed solution online.</span></div>
+              <div class="mini-step"><b>02</b><span><strong>Shortlisting</strong>Entries screened on innovation, feasibility and technical viability.</span></div>
+              <div class="mini-step"><b>03</b><span><strong>Final Pitching Round</strong>Shortlisted teams presented live before a panel of judges.</span></div>
+              <div class="mini-step"><b>04</b><span><strong>Industrial Visit Selection</strong>The top 30 performers earned their spot on the industrial visit to Appointy, Bhopal.</span></div>
+            </div>
+          </div>
+
+          <aside class="event__aside">
+            <h4>Winners</h4>
+            <div class="winners">
+              <div class="winner"><span class="winner__pos">1</span><span><span class="winner__name">Aditi Singh</span><span class="winner__meta">Winner</span></span></div>
+              <div class="winner"><span class="winner__pos">2</span><span><span class="winner__name">Anshima</span><span class="winner__meta">1st runner-up</span></span></div>
+              <div class="winner"><span class="winner__pos">3</span><span><span class="winner__name">Shambhavi Dixit</span><span class="winner__meta">2nd runner-up</span></span></div>
+            </div>
+            <p style="color: var(--dim); font-size: 13px; margin-top: 18px;">
+              Scored on innovation, originality, practicality, technical viability, scalability and clarity of presentation.
+            </p>
+          </aside>
+        </article>
+
+        <!-- Appointy -->
+        <article class="event reveal">
+          <div>
+            <span class="event__tag">Event 03 &middot; Industrial Visit</span>
+            <h3>Appointy, Bhopal</h3>
+            <p class="event__body">
+              EvolVIT organised an industrial visit to Appointy, Bhopal, giving 40 students immersive
+              exposure to a real technology-driven organisation — the top 30 performers from
+              Idea2Industry among them, having earned the trip as that event's selection criteria.
+              Students were introduced to the company's journey, vision and global presence —
+              including how a Bhopal-based company builds scalable solutions for international clients.
+            </p>
+            <p class="event__body">
+              They got a detailed look at the product development lifecycle — planning, coding,
+              testing, deployment, continuous improvement — with emphasis on structured
+              problem-solving, QA and user-centric design. A highlight was the discussion on
+              AI-driven transformation: automation, data-driven decisions, and the skills needed to
+              stay competitive. An open Q&amp;A let students get career guidance directly from
+              industry professionals.
+            </p>
+
+            <div class="shots">
+              <button class="shot" type="button" data-lightbox data-caption="Briefing session at Appointy, Bhopal">
+                <img src="assets/img/appointy-briefing.jpg" alt="Students in a briefing session at Appointy" loading="lazy" />
+                <figcaption>Briefing session</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="Appointy's startup-style collaborative workspace">
+                <img src="assets/img/appointy-workspace.jpg" alt="Students touring Appointy's startup-style workspace" loading="lazy" />
+                <figcaption>Startup-style workspace</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="Open Q&amp;A with the Appointy team">
+                <img src="assets/img/appointy-qa.jpg" alt="Students in an open question and answer session with Appointy professionals" loading="lazy" />
+                <figcaption>Q&amp;A with the team</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="40 students on the industrial visit to Appointy, Bhopal" style="grid-column: span 3; aspect-ratio: 21 / 9;">
+                <img src="assets/img/appointy-group.jpg" alt="Group photograph of the 40 students on the EvolVIT industrial visit to Appointy" loading="lazy" />
+                <figcaption>Team visit &mdash; 40 students on site</figcaption>
+              </button>
+            </div>
+          </div>
+
+          <aside class="event__aside">
+            <h4>On the ground</h4>
+            <div class="facts">
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong style="color: var(--text);">40 students</strong> on site, including the top 30 from Idea2Industry</span></div>
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Full product development lifecycle walkthrough</span></div>
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Session on AI-driven transformation and automation</span></div>
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Startup-style collaborative workspace, seen first-hand</span></div>
+            </div>
+            <p style="color: var(--dim); font-size: 12.6px; margin-top: 20px; line-height: 1.7;">
+              Visit guided by Dr. Chandan Kumar Behera (Asst. Director, Student Welfare),
+              Dr. Trapti Sharma (Student Welfare Coordinator) and Dr. Prakash N. B. (Faculty Coordinator).
+            </p>
+          </aside>
+        </article>
+
+        <!-- Viksit Bharat -->
+        <article class="event reveal">
+          <div>
+            <span class="event__tag">Event 04 &middot; Orientation &middot; With Defence Warrior Club</span>
+            <h3>Youth as Game Changers for Viksit Bharat</h3>
+            <p class="event__body">
+              Themed &ldquo;Role from 2026 to 2047,&rdquo; this orientation was organised jointly with
+              the Defence Warrior Club to sensitise students to their role in building a Developed
+              India by 2047. Chief Guest Brigadier Rajneesh Gaur, Deputy Director General of the NCC
+              MP &amp; CG Directorate, addressed the gathering on discipline, leadership and national
+              service.
+            </p>
+            <p class="event__body">
+              The Brigadier spoke on discipline, dedication and leadership in achieving personal and
+              national goals, and on how the NCC shapes character in young people. The session ran
+              highly interactive, with students engaging closely on questions of career, service and
+              citizenship — closing with a feedback session, a formal vote of thanks, and the
+              National Anthem.
+            </p>
+
+            <div class="shots">
+              <button class="shot" type="button" data-lightbox data-caption="Brigadier Rajneesh Gaur addressing students">
+                <img src="assets/img/viksit-address.jpg" alt="Brigadier Rajneesh Gaur addressing students from the podium" loading="lazy" />
+                <figcaption>The address</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="In conversation with students after the session">
+                <img src="assets/img/viksit-students.jpg" alt="Brigadier Rajneesh Gaur in conversation with students" loading="lazy" />
+                <figcaption>In conversation</figcaption>
+              </button>
+              <button class="shot" type="button" data-lightbox data-caption="Youth as Game Changers for Viksit Bharat — organising team and attendees">
+                <img src="assets/img/viksit-group.jpg" alt="Group photograph of attendees at the Viksit Bharat orientation programme" loading="lazy" />
+                <figcaption>The gathering</figcaption>
+              </button>
+            </div>
+          </div>
+
+          <aside class="event__aside">
+            <h4>Highlights</h4>
+            <div class="facts">
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Theme: <strong style="color: var(--text);">Role from 2026 to 2047</strong></span></div>
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Chief Guest: Brigadier Rajneesh Gaur, DDG, NCC MP &amp; CG Directorate</span></div>
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Joint collaboration with the Defence Warrior Club</span></div>
+              <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Highly interactive Q&amp;A on career, service and citizenship</span></div>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOIN ============ -->
+  <section class="section" id="join">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="eyebrow" style="justify-content: center;">Recruitment</span>
+        <h2>Build something that<br /><span class="grad-text">outlives the semester.</span></h2>
+        <p>
+          If you want to learn by shipping — hackathons, workshops, live projects, and a shot at a
+          real internship — EvolVIT is open to students of every branch and every year. Bring
+          curiosity; we'll bring the problem statements.
+        </p>
+        <div class="cta__actions">
+          <!-- TODO: replace with your live recruitment form link (Google Form / club portal) -->
+          <a class="btn btn--primary" href="#" data-recruitment-link>Apply to join <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--ghost" href="https://instagram.com/evolvitclub_vitb" target="_blank" rel="noopener noreferrer">Message us on Instagram</a>
+        </div>
+        <p style="font-family: var(--font-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); margin-top: 30px;">
+          Evolve &middot; Experience &middot; Excel
+        </p>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top: clamp(54px, 6vw, 92px);">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Questions</span>
+          <h2 style="font-size: clamp(26px, 3.4vw, 40px);">Before you apply</h2>
+        </div>
+
+        <div class="faq">
+          <details class="qa reveal">
+            <summary>Do I need to already know how to code?</summary>
+            <p>No. EvolVIT runs six different teams — tech, content, event management, design, social media and photography, and PR and outreach — so there is real work whatever your strength. If you do want to go technical, our events and workshops are built to take you from curious to competent.</p>
+          </details>
+          <details class="qa reveal" style="--d: 60ms;">
+            <summary>Which branches and years can join?</summary>
+            <p>All of them. We're a university-wide club, and our events are open to every branch and year at VIT Bhopal. Teams are assembled on interest and effort, not on your CGPA or your department.</p>
+          </details>
+          <details class="qa reveal" style="--d: 120ms;">
+            <summary>How do the internships actually work?</summary>
+            <p>Our Research Team closes collaborations with companies, then top-performing club members go through a five-stage selection — screening, a mini-project skill assessment, performance evaluation, an assessment run by the hiring company itself, and finally placement. Past placements include a 3-month internship with Datatrack, Bhopal (counted for 4 college credits) and a 1-month full-stack sprint with Quantumard.</p>
+          </details>
+          <details class="qa reveal" style="--d: 180ms;">
+            <summary>What kind of projects will I work on?</summary>
+            <p>Live ones. Members have shipped production work including Uprole, an AI Worksheet Analyzer, Atithi (a visitor management system), a centralized EV discovery platform, and a full-stack project management system with role-based access built on Next.js, TypeScript, Tailwind and a Node/Express/MongoDB backend.</p>
+          </details>
+          <details class="qa reveal" style="--d: 240ms;">
+            <summary>What's the time commitment?</summary>
+            <p>It scales with what you take on. Attending workshops, seminars and hackathons is light. Owning an event workstream or joining an internship cohort means real deadlines — which is exactly the point, because that's the part that translates to a job floor.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo">
+          <img src="assets/img/evolvit-logo.png" alt="EvolVIT club logo" width="86" height="86" loading="lazy" />
+        </div>
+        <a class="logo" href="#top" aria-label="EvolVIT home">
+          <span class="logo__text">Evol<span>VIT</span></span>
+        </a>
+        <p>
+          The 100th official club of VIT Bhopal University. Bridging classrooms to corporate —
+          building futures, together.
+        </p>
+        <div class="socials">
+          <a href="https://instagram.com/evolvitclub_vitb" target="_blank" rel="noopener noreferrer" aria-label="EvolVIT on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <!-- TODO: replace with the club's LinkedIn page URL -->
+          <a href="#" data-linkedin-link aria-label="EvolVIT on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 9.5V19"/><circle cx="4.5" cy="5" r="1.6"/><path d="M10 19v-5.2a3.3 3.3 0 0 1 6.6 0V19"/><path d="M10 9.5V19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <div class="footer__links">
+          <a href="#about">About the club</a>
+          <a href="#internship">Internship program</a>
+          <a href="#partners">Industry partners</a>
+          <a href="#process">Selection process</a>
+          <a href="#teams">Our teams</a>
+          <a href="#events">Event record</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Member projects</h4>
+        <div class="footer__links">
+          <a href="https://uprole.me" target="_blank" rel="noopener noreferrer">Uprole &#8599;</a>
+          <a href="https://pracup.co.in" target="_blank" rel="noopener noreferrer">AI Worksheet Analyzer &#8599;</a>
+          <span style="color: var(--dim); font-size: 14.4px;">Atithi &mdash; Visitor Mgmt.</span>
+          <span style="color: var(--dim); font-size: 14.4px;">EV Discovery Platform</span>
+          <span style="color: var(--dim); font-size: 14.4px;">Project Management System</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> EvolVIT &middot; VIT Bhopal University</span>
+      <span>Evolve. Experience. Excel.</span>
+      <span>@evolvitclub_vitb</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
