@@ -20,7 +20,7 @@ Open `index.html` and it runs.
 | Selection Process | The five-stage Research Team evaluation |
 | Teams | The six core teams behind every event |
 | Events | EvolART, Idea2Industry, the Appointy industrial visit, and Viksit Bharat — with winners and photos |
-| Join | Recruitment CTA + FAQ |
+| Join | Recruitment CTA + FAQ, linking to `apply.html` |
 
 All content is sourced from the official **EvolVIT Club Record 2025–26**, including the club
 logo and event photography.
@@ -31,10 +31,13 @@ logo and event photography.
 
 ```
 .
-├── index.html              # the whole page
+├── index.html              # the main page
+├── apply.html              # recruitment form (front end only, no backend)
 ├── assets/
 │   ├── css/styles.css      # design tokens -> base -> components -> sections -> responsive
+│   ├── css/apply.css       # form styles for apply.html
 │   ├── js/main.js          # nav, scroll reveal, counters, hero canvas, lightbox
+│   ├── js/apply.js         # form validation, counters, local draft, success state
 │   └── img/                # club logo, event photos, favicons, OG card
 └── README.md
 ```
@@ -59,22 +62,31 @@ No build command is needed — Pages serves the files as they are.
 
 ---
 
-## Before you publish: two links to fill in
+## Before you publish: connect the form
 
-Both are marked with `TODO` comments in `index.html`:
+`apply.html` is a complete, working front end for recruitment — validation, character
+counters, a draft saved in the visitor's own browser, and a success screen — but it has
+**no backend**, so submissions are not stored or emailed anywhere. The page says so plainly
+in an amber notice, so nobody thinks they have applied when they haven't.
 
-1. **Recruitment form** — the `Apply to join` button in the `#join` section
-   (`<a ... data-recruitment-link>`). Point it at your Google Form or club portal.
-2. **LinkedIn page** — the LinkedIn icon in the footer (`<a ... data-linkedin-link>`).
+To make it live, pick one:
 
-The Instagram link (`@evolvitclub_vitb`) and the member project links
-(`uprole.me`, `pracup.co.in`) are already live.
+- **Google Form** — easiest. Create the form, then either point the `Apply to join` buttons
+  straight at it, or keep this page and POST to the form's `formResponse` endpoint.
+- **Formspree / Getform / Basin** — set `action="https://formspree.io/f/XXXX"` and
+  `method="post"` on `<form id="applyForm">` in `apply.html`, then delete the
+  `e.preventDefault()` branch in `assets/js/apply.js`.
+- **Club portal** — the Quantumard project management system already has role-based auth;
+  POST the same field names to it.
 
-Find them quickly:
+Field names are already sensible and stable: `name`, `reg`, `email`, `phone`, `year`,
+`branch`, `team1`, `team2`, `skills[]`, `why`, `built`, `portfolio`, `hours`, `internship`,
+`consent`.
 
-```bash
-grep -n "TODO" index.html
-```
+When the form is connected, remove the `.demo-note` block from `apply.html`.
+
+All other links are live: Instagram (`@evolvitclub_vitb`), LinkedIn
+(`linkedin.com/company/evolvit-club`), and the member projects (`uprole.me`, `pracup.co.in`).
 
 ## Editing content
 

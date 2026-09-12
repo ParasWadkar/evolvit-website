@@ -789,7 +789,7 @@ section { position: relative; scroll-margin-top: 86px; }
   display: flex;
   align-items: center;
   gap: 13px;
-  padding: 11px 2px;
+  padding: 13px 2px;
   border-bottom: 1px solid var(--line);
 }
 .winner:last-child { border-bottom: 0; }
@@ -811,14 +811,15 @@ section { position: relative; scroll-margin-top: 86px; }
   color: #04060b;
   font-weight: 700;
 }
-.winner__name { font-size: 14.2px; font-weight: 500; line-height: 1.4; }
+.winner__name { display: block; font-size: 14.2px; font-weight: 500; line-height: 1.4; }
 .winner__meta {
+  display: block;
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--dim);
-  margin-top: 2px;
+  margin-top: 6px;
 }
 .mini-steps { display: grid; gap: 14px; }
 .mini-step { display: grid; grid-template-columns: 26px 1fr; gap: 13px; align-items: start; }

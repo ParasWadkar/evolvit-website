@@ -9,8 +9,10 @@
   var on = function (el, ev, fn, opts) { if (el) el.addEventListener(ev, fn, opts || false); };
 
   /* ---------- 1. Current year ---------- */
-  var year = document.getElementById("year");
-  if (year) year.textContent = String(new Date().getFullYear());
+  var thisYear = String(new Date().getFullYear());
+  Array.prototype.forEach.call(document.querySelectorAll("[data-year]"), function (el) {
+    el.textContent = thisYear;
+  });
 
   /* ---------- 2. Sticky header state ---------- */
   var header = document.getElementById("header");
